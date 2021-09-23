@@ -1,2 +1,2 @@
 #!/bin/bash
-find /dir/ chmod -R u+X
+find /dir/ chmod -R +111
