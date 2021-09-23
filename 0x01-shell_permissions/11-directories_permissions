@@ -1,2 +1,2 @@
 #!/bin/bash
-find /dir/ chmod u+x
+find /dir/ chmod -R u+x
