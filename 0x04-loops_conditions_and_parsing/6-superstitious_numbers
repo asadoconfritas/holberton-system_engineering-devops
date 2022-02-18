@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# displays Best School 10 times, except at line 9
+# displays "n" 20 times, except at line 4, 9 and 17
 i=0
 while [ "$i" -lt 20 ]; do
 	echo $i
