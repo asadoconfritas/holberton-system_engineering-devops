@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# displays visitor IP w the HTTP status (from apache log file)
+awk -F ' ' '{print $1 " " $9}' apache-access.log | sort | uniq -c | sort -nr
