@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# displays content in the file etc passwd
+while IFS=: read -r f1 f3 f6; do
+	echo "$f1:$f3:$f6"
+done < /etc/passwd
