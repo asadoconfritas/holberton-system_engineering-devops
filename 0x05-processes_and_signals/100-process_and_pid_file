@@ -1,3 +1,11 @@
 #!/usr/bin/env bash
-# displays its own PID
-echo
+# many shenanigans
+echo $$ >> /var/run/myscript.pid
+trap 'I hate the kill command; rm -rf /var/run/myscript.pid; exit' SIGTERM
+trap 'echo Y U no love me?!' SIGINT
+trap 'rm -rf /var/run/myscript.pid' SIGQUIT
+while true
+do
+	echo To infinity and beyond
+	sleep 2
+done
