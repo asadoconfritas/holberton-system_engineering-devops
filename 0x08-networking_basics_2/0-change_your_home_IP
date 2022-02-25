@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#configures an Ubuntu server with some requirements
+sed '/127.0.0.1/d' /etc/hosts > ./auxf
+echo "127.0.0.1 localhost" >> ./auxf
+echo "8.8.8.8 facebook.com" >> ./auxf
+cp ./auxf /etc/hosts
+rm ./auxf
