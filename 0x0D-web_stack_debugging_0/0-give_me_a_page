@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Fix my server with these magic 2 lines
+
+sudo service apache2 start
