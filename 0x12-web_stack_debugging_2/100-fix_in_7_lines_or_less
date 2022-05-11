@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# same as the previous ex, but shorter
+sudo sed -i '1s/^/user nginx\n/' /etc/nginx/nginx.conf
