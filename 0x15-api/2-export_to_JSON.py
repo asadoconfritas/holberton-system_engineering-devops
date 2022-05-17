@@ -22,7 +22,7 @@ def get_todos2(u_id):
             task_dict = {}
             task_dict['task'] = value['title']
             task_dict['completed'] = value['completed']
-            task_dict['username'] = user['username']
+            task_dict['username'] = evruser['username']
             aux[u_id].append(task_dict)
         json.dump(aux, file)
         dict_writer = csv.DictWriter(file,
