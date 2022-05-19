@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """returns information about an employee TODO list progress."""
-import json
 import csv
+import json
 import requests
 from sys import argv
 
@@ -19,10 +19,10 @@ def get_todos(u_id):
             value['id'] = u_id
             value['name'] = evruser['username']
         dict_writer = csv.DictWriter(file,
-                keys,
-                extrasaction='ignore',
-                quoting=csv.QUOTE_ALL,
-                lineterminator='\n')
+                                     keys,
+                                     extrasaction='ignore',
+                                     quoting=csv.QUOTE_ALL,
+                                     lineterminator='\n')
         dict_writer.writerows(content)
 
 

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """returns information about an employee TODO list progress."""
-import json
 import csv
+import json
 import requests
 from sys import argv
 
